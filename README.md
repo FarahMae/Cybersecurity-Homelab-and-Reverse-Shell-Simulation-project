@@ -77,7 +77,7 @@ Each simulated attack was captured and alerted by Suricata in the pfSense interf
 | Hydra Brute Force | ✅ Alerted (HTTP anomalies) |
 
 
-> Screenshots available in the `screenshots/` folder.
+> Screenshots available in the report file.
 
 ---
 
